@@ -1,0 +1,7 @@
+.top-header{
+  @include justify-content(space-between);
+  @include flex-direction(row);
+}
+.nav__item{
+  font-weight: 400;
+}

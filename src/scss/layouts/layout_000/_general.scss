@@ -1,0 +1,24 @@
+
+
+
+
+html {
+  font-size: $baseFontSize;
+}
+body {
+  font: rem(16px) $fontFamily;
+  min-height: 100vh;
+  max-width: 1170px;
+  display:flex;
+  flex-direction:column;
+  background-color: $white;
+  margin: 0 auto;
+}
+.headtitle {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+img {
+  vertical-align: top;
+}

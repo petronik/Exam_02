@@ -1,0 +1,19 @@
+.top-header {
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.nav {
+  margin: 0;
+  @include display(flex);
+
+  @include e(item) {
+    display: inline;
+    font-weight: 700;
+    padding: rem(12px) rem(10px);
+
+    color: $white;
+    border-bottom: 0;
+  }
+}
