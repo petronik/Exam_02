@@ -29,18 +29,21 @@
   margin: 1rem 0;
 
   @include e(item) {
+    display: block;
+    text-align: center;
     padding:rem(5px) rem(20px);
     text-decoration: none;
     line-height: rem(40px);
     border: solid transparent 1px;
     color: $white;
+    &:hover{
+      line-height: rem(40px);
+      border: solid #FFFFFF 1px;
+      border-radius: 20px;
+    }
   }
 }
-.nav__item:hover{
-  line-height: rem(40px);
-  border: solid #FFFFFF 1px;
-  border-radius: 20px;
-}
+
 .content {
   @include display(flex);
   @include justify-content(center);

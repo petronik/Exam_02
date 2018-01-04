@@ -1,4 +1,4 @@
-.toggle-menu{
+.toggle-menu {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -13,10 +13,11 @@
   span {
     display: block;
     height: 5px;
-    background: $black;
+    background: $white;
     margin-bottom: 6px;
     width: 100%;
     transition: all .4s;
+
     &:last-of-type{
       margin-bottom: 0;
     }

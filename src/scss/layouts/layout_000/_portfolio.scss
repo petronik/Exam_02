@@ -1,8 +1,7 @@
 .portfolio {
 
   background-color: $dirtyWhite;
-  column-gap: 0;
-
+  text-align: center;
   @include e(header){
     text-align: center;
     max-width: 460px;
@@ -39,12 +38,10 @@
   }
 }
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
   transition: all 2s;
-  padding: 0 10px 80px 10px;
-  column-gap: 0;
+  padding: 0 10px;
+
 }
 
 .all{

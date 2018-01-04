@@ -1,10 +1,10 @@
-const toggleMenu = $('toggle-menu');
+const toggleMenu = $('#toggle-menu');
 const navMenu = $('#nav-menu');
 
 toggleMenu.click(function(){
     const $this = $(this);
     let h;
-    if(navMenu.is(':hidden')){
+    if(navMenu.is(':hidden')) {
         h = navMenu.show().height();
             navMenu.css('height', 0);
             navMenu.animate({'height': h}, 500,
@@ -51,22 +51,23 @@ ssm.addState({
 
 
 
-$("#slider").slick({
+/*--------Slick Slider------------*/
+
+$('#slider').slick({
     autoplay: true,
-    slidesToScroll:1,
-    slidesToShow:1,
-    arrows: false
+    slidesToScroll: 1,
+     slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: 'mydots',
+
 });
 
+/*-------- END Slick Slider------------*/
 
 
+/*-------------isotope------------------*/
 
-/*$('button').click(function(){
-    const $this = $(this);
-    const cls = $this.data('filter');
-    $('article').hide();
-    $(cls).show();
-    });*/
 let $gallery = $('.gallery').isotope({
     itemSelector: '.all',
     layoutMode: 'masonry',
@@ -79,10 +80,18 @@ $('button').click(function(){
     console.log(this)
 
         });
+/*----------End isotope--------------*/
 
+
+/*----------SmoothScroll-------------*/
 new SmoothScroll('a[href*="#"]',{
     speed: 3000});
 
+/*---------END SmoothScroll-------------*/
+
+
+
+/*-------------Google Map-----------------*/
 function initMap() {
     var cnt = {lat: 46.478766, lng: 30.723594};
     var map = new
@@ -107,12 +116,7 @@ function initMap() {
         infoWindow.open(map,marker)
     });
 }
-$('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    dotsClass: 'mydots'
-});
+
+/*---------------END Google Map-----------------*/
+
+

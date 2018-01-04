@@ -8,7 +8,7 @@ html {
 body {
   font: rem(16px) $fontFamily;
   min-height: 100vh;
-  max-width: 1170px;
+  /*max-width: 100%;*/
   display:flex;
   flex-direction:column;
   background-color: $white;
